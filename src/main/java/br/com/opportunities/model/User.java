@@ -19,9 +19,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
-    @Column(nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "phone", nullable = false)
     private String phone;
 
     @CreationTimestamp
@@ -37,10 +41,8 @@ public class User {
     @Column(name = "last_login_at")
     private OffsetDateTime lastLoginAt;
 
+    @Column(name = "role")
     private String role;
-
-    @Column(name = "avatar_url")
-    private String avatarUrl;
 
     @Column(name = "deleted_at")
     private OffsetDateTime deletedAt;
@@ -48,4 +50,7 @@ public class User {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "deleted_by")
     private User deletedBy;
+
+    @Column(name = "avatar_url")
+    private String avatarUrl;
 }
