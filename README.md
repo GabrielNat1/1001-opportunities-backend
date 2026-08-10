@@ -33,7 +33,10 @@
 
 ## 🛠️ Tech Stack
 
-![Java (Maven)](https://img.shields.io/badge/Java%20(Maven)-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## ⚡ Quick Start
 
@@ -68,13 +71,7 @@ spring-security-test: managed
         └── 📁academic
             └── 📁appendices
             └── 📁final
-                ├── 1001 OPPORTUNITIES.docx
-                ├── 1001 OPPORTUNITIES.pdf
             └── 📁images
-                └── 📁architecture
-                └── 📁cover
-                └── 📁database
-                └── 📁screenshots
             └── 📁paper
             └── 📁references
             └── 📁sections
@@ -87,178 +84,20 @@ spring-security-test: managed
                             └── 📁client
                                 └── 📁ai
                                     └── 📁dto
-                                        ├── EssayCorrectionRequest.java
-                                        ├── EssayCorrectionResponse.java
                                     └── 📁impl
-                                        ├── OpenAiClientImpl.java
-                                    ├── AiClient.java
                                 └── 📁storage
                                     └── 📁impl
-                                        ├── LocalFileStorageServiceImpl.java
                                     ├── FileStorageService.java
                             └── 📁config
-                                ├── CorsConfig.java
-                                ├── FileUploadConfig.java
-                                ├── OpenApiConfig.java
-                                ├── SecurityConfig.java
                             └── 📁controller
-                                ├── AuditLogController.java
-                                ├── CourseVideoController.java
-                                ├── EssayCorrectionController.java
-                                ├── FeaturedJobController.java
-                                ├── FileUploadController.java
-                                ├── JobController.java
-                                ├── JobLikeController.java
-                                ├── LibraryBookController.java
-                                ├── LiveAnnouncementController.java
-                                ├── MaintenanceModeController.java
-                                ├── NotificationController.java
-                                ├── PageMaintenanceController.java
-                                ├── PracticeExamController.java
-                                ├── PracticeProgressController.java
-                                ├── PracticeQuestionController.java
-                                ├── QuestionBankController.java
-                                ├── ResumeController.java
-                                ├── SupportMaterialController.java
-                                ├── UserBadgeController.java
-                                ├── UserController.java
-                                ├── UserFrameController.java
-                                ├── UserProgressController.java
-                                ├── UserUnlockedFrameController.java
-                                ├── UserVideoProgressController.java
                             └── 📁dto
                                 └── 📁request
-                                    ├── CourseVideoRequestDTO.java
-                                    ├── EquipFrameRequestDTO.java
-                                    ├── EssaySubmissionRequestDTO.java
-                                    ├── FeaturedJobRequestDTO.java
-                                    ├── GrantBadgeRequestDTO.java
-                                    ├── JobLikeRequestDTO.java
-                                    ├── JobRequestDTO.java
-                                    ├── LibraryBookRequestDTO.java
-                                    ├── LiveAnnouncementRequestDTO.java
-                                    ├── MaintenanceModeRequestDTO.java
-                                    ├── NotificationRequestDTO.java
-                                    ├── PageMaintenanceRequestDTO.java
-                                    ├── PracticeExamRequestDTO.java
-                                    ├── PracticeProgressRequestDTO.java
-                                    ├── PracticeQuestionRequestDTO.java
-                                    ├── QuestionBankRequestDTO.java
-                                    ├── ResumeRequestDTO.java
-                                    ├── SupportMaterialRequestDTO.java
-                                    ├── UnlockFrameRequestDTO.java
-                                    ├── UserCreateRequestDTO.java
-                                    ├── UserProgressUpdateRequestDTO.java
-                                    ├── UserUpdateRequestDTO.java
-                                    ├── VideoProgressRequestDTO.java
                                 └── 📁response
-                                    ├── AuditLogResponseDTO.java
-                                    ├── CourseVideoResponseDTO.java
-                                    ├── EssayCorrectionResponseDTO.java
-                                    ├── FeaturedJobResponseDTO.java
-                                    ├── FileUploadResponseDTO.java
-                                    ├── JobLikeResponseDTO.java
-                                    ├── JobResponseDTO.java
-                                    ├── LibraryBookResponseDTO.java
-                                    ├── LiveAnnouncementResponseDTO.java
-                                    ├── MaintenanceModeResponseDTO.java
-                                    ├── NotificationResponseDTO.java
-                                    ├── PageMaintenanceResponseDTO.java
-                                    ├── PracticeExamResponseDTO.java
-                                    ├── PracticeProgressResponseDTO.java
-                                    ├── PracticeQuestionResponseDTO.java
-                                    ├── QuestionBankResponseDTO.java
-                                    ├── ResumeResponseDTO.java
-                                    ├── SupportMaterialResponseDTO.java
-                                    ├── UnlockedFrameResponseDTO.java
-                                    ├── UserBadgeResponseDTO.java
-                                    ├── UserFrameResponseDTO.java
-                                    ├── UserProgressResponseDTO.java
-                                    ├── UserResponseDTO.java
-                                    ├── VideoProgressResponseDTO.java
                             └── 📁exception
-                                ├── BusinessException.java
-                                ├── FileStorageException.java
-                                ├── GlobalExceptionHandler.java
-                                ├── InvalidFileFormatException.java
-                                ├── ResourceNotFoundException.java
                             └── 📁model
-                                ├── AuditLog.java
-                                ├── CourseVideo.java
-                                ├── EssayCorrection.java
-                                ├── FeaturedJob.java
-                                ├── Job.java
-                                ├── JobLike.java
-                                ├── LibraryBook.java
-                                ├── LiveAnnouncement.java
-                                ├── MaintenanceMode.java
-                                ├── Notification.java
-                                ├── PageMaintenance.java
-                                ├── PracticeExam.java
-                                ├── PracticeProgress.java
-                                ├── PracticeQuestion.java
-                                ├── QuestionBank.java
-                                ├── Resume.java
-                                ├── SupportMaterial.java
-                                ├── User.java
-                                ├── UserBadge.java
-                                ├── UserFrame.java
-                                ├── UserProgress.java
-                                ├── UserUnlockedFrame.java
-                                ├── UserUnlockedFrameId.java
-                                ├── UserVideoProgress.java
                             └── 📁repository
-                                ├── AuditLogRepository.java
-                                ├── CourseVideoRepository.java
-                                ├── EssayCorrectionRepository.java
-                                ├── FeaturedJobRepository.java
-                                ├── JobLikeRepository.java
-                                ├── JobRepository.java
-                                ├── LibraryBookRepository.java
-                                ├── LiveAnnouncementRepository.java
-                                ├── MaintenanceModeRepository.java
-                                ├── NotificationRepository.java
-                                ├── PageMaintenanceRepository.java
-                                ├── PracticeExamRepository.java
-                                ├── PracticeProgressRepository.java
-                                ├── PracticeQuestionRepository.java
-                                ├── QuestionBankRepository.java
-                                ├── ResumeRepository.java
-                                ├── SupportMaterialRepository.java
-                                ├── UserBadgeRepository.java
-                                ├── UserFrameRepository.java
-                                ├── UserProgressRepository.java
-                                ├── UserRepository.java
-                                ├── UserUnlockedFrameRepository.java
-                                ├── UserVideoProgressRepository.java
                             └── 📁service
-                                ├── AuditLogService.java
-                                ├── CourseVideoService.java
-                                ├── EssayCorrectionService.java
-                                ├── FeaturedJobService.java
-                                ├── FileValidationService.java
-                                ├── JobLikeService.java
-                                ├── JobService.java
-                                ├── LibraryBookService.java
-                                ├── LiveAnnouncementService.java
-                                ├── MaintenanceModeService.java
-                                ├── NotificationService.java
-                                ├── PageMaintenanceService.java
-                                ├── PracticeExamService.java
-                                ├── PracticeProgressService.java
-                                ├── PracticeQuestionService.java
-                                ├── QuestionBankService.java
-                                ├── ResumeService.java
-                                ├── SupportMaterialService.java
-                                ├── UserBadgeService.java
-                                ├── UserFrameService.java
-                                ├── UserProgressService.java
-                                ├── UserService.java
-                                ├── UserUnlockedFrameService.java
-                                ├── UserVideoProgressService.java
                             └── 📁util
-                                ├── FileValidationUtils.java
-                                ├── SecurityUtils.java
                             ├── OpportunitiesApplication.java
             └── 📁resources
                 └── 📁static
