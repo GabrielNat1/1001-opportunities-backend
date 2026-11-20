@@ -2,8 +2,8 @@ package br.com.opportunities.controller;
 
 import br.com.opportunities.dto.request.UserCreateRequestDTO;
 import br.com.opportunities.dto.response.UserResponseDTO;
-import br.com.opportunities.model.User;
-import br.com.opportunities.repository.UserRepository;
+import br.com.opportunities.model.user.User;
+import br.com.opportunities.repository.user.UserRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
